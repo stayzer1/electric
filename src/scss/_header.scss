@@ -1,0 +1,125 @@
+// Header
+header {
+    padding-top: 20px;
+}
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &--text {
+        color: #101010;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+    }
+}
+.menu__item--contact {
+    flex-direction: column;
+    gap: 0;
+    width: 244px;
+    .menu__item--number {
+        color: #101010;
+        font-size: 24px;
+        line-height: 37px;
+        font-weight: 900;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+    }
+    .menu__item--descr {
+        font-weight: 300;
+    }
+}
+.menu__item--button {
+    color: #101010;
+    font-size: 12px;
+    line-height: 1.55;
+    width: 172px;
+    height: 55px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-width: 2px;
+    border-radius: 300px;
+    background-position: center center;
+    border-color: #597adb;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+}
+.menu__item--button:hover {
+    color: #ffffff;
+    background-color: #597adb;
+    background-image: none;
+}
+.col:nth-child(1) {
+    .menu__item--text {
+        width: 139px;
+    }
+    .menu__item--image {
+        width: 49px;
+        height: 49px;
+    }
+}
+.col:nth-child(2) {
+    .menu__item--text {
+        width: 147px;
+    }
+    .menu__item--image {
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+    }
+}
+.col:nth-child(3) {
+    .menu__item--text {
+        width: 180px;
+    }
+    .menu__item--image {
+        width: 100px;
+        flex-direction: row;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .col:last-child {
+        display: none;
+    }
+    .col:nth-child(3) {
+        .menu__item--text {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    .col:nth-child(2) {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .col:nth-child(4) {
+        display: none;
+    }
+    .col:nth-child(1) {
+        max-width: 200px;
+    }
+    .col:nth-child(3) {
+        max-width: 110px;
+    }
+}

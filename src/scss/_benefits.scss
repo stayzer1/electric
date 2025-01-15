@@ -1,0 +1,105 @@
+.benefits {
+    padding: 40px 0;
+    position: relative;
+}
+.benefits::before {
+    content: "";
+    opacity: 0.1;
+    background-image: url(../img/molen-min_1.png);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.benefits__item {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    max-width: 219px;
+    img {
+        margin-bottom: 10px;
+        width: 55px;
+        height: 55px;
+    }
+}
+.benefits__title {
+    padding-bottom: 20px;
+    color: #101010;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.col-lg-6 {
+    img {
+        display: block;
+        width: 545px;
+        height: 425px;
+        border-radius: 100px;
+    }
+}
+.benefits__item--title {
+    color: #101010;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+}
+@media screen and (max-width: 960px) {
+    .order-lg-3 {
+        .benefits__item {
+            align-items: flex-start !important;
+        }
+    }
+    .benefits__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .col-lg-6 {
+        img {
+            width: 350px;
+            height: 330px;
+        }
+    }
+    .benefits__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .benefits__item {
+        max-width: 285px;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefits__item--text {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-12 {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .benefits__title {
+        font-size: 27px;
+        letter-spacing: -1px;
+        line-height: 30px;
+    }
+    .benefits__item--title {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+    .benefits__item--descr {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
