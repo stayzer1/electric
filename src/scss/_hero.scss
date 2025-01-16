@@ -17,7 +17,7 @@
     gap: 10px;
     flex-direction: column;
 }
-.hero__grade--item {
+.grade--item {
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -30,7 +30,7 @@
     padding: 0 20px;
     gap: 10px;
 }
-.hero__grade--star {
+.grade--star {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
         height: 9px;
     }
 }
-.hero__grade--star--number {
+.grade--star--number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +57,9 @@
 .hero__background-image {
     position: absolute;
     width: 640px;
-    left: 650px;
-    top: 90px;
+    left: calc(50% - 600px + 530px);
+    // top: 90px;
+    bottom: 0;
     height: 730px;
 }
 .hero__title {

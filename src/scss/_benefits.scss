@@ -36,7 +36,7 @@
     font-weight: 900;
     letter-spacing: -2px;
 }
-.col-lg-6 {
+.benefits .col-lg-6 {
     img {
         display: block;
         width: 545px;
@@ -51,7 +51,7 @@
     line-height: 25px;
 }
 @media screen and (max-width: 960px) {
-    .order-lg-3 {
+    .benefits .order-lg-3 {
         .benefits__item {
             align-items: flex-start !important;
         }
@@ -62,7 +62,7 @@
     }
 }
 @media screen and (max-width: 640px) {
-    .col-lg-6 {
+    .benefits .col-lg-6 {
         img {
             width: 350px;
             height: 330px;
@@ -83,7 +83,7 @@
         display: flex;
         flex-direction: column;
     }
-    .col-12 {
+    .benefits .col-12 {
         align-items: center;
     }
 }

@@ -1,0 +1,136 @@
+.faq {
+    padding: 40px 0;
+    background-color: #f7f6f8;
+}
+
+.faq__title {
+    color: #101010;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.faq__subtitle {
+    text-align: center;
+    color: #101010;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.accordion-item {
+    border-radius: 15px !important;
+    border: none !important;
+}
+.accordion-header {
+}
+.accordion-button {
+    border-radius: 15px !important;
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    position: relative;
+}
+.accordion-item:hover {
+    .accordion-button::before {
+        opacity: 1;
+        transition: opacity ease-in-out 0.2s;
+    }
+    .accordion-button::after {
+        svg {
+            fill: #fff;
+        }
+    }
+}
+.accordion-button::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 9px;
+    width: 40px;
+    height: 40px;
+    background-color: #6085f4;
+    opacity: 0;
+    border-radius: 50%;
+}
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+}
+.accordion-button::after {
+    position: relative;
+    z-index: 10;
+    background-image: url(../img/plus-svgrepo-com.svg);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/plus-svgrepo-com.svg);
+    transform: rotate(-45deg);
+}
+.accordion-collapse {
+}
+.collapse {
+}
+.show {
+}
+.accordion-body {
+    font-weight: 300;
+    line-height: 1.55;
+    font-size: 16px;
+    li {
+        list-style-type: disc;
+    }
+    li::marker {
+        color: #101010;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+}
+.collapsed {
+}
+@media screen and (max-width: 1200px) {
+    .accordion-button {
+        font-size: 22px;
+    }
+    .accordion-body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .faq__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .faq__subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .accordion-button::before {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .faq__title {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .faq__subtitle {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .accordion-button {
+        font-size: 20px;
+    }
+    .accordion-button::after {
+        margin-left: 10px;
+    }
+    .accordion-body {
+        font-size: 12px;
+        line-height: 1.45;
+    }
+}

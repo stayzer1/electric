@@ -1,0 +1,147 @@
+.reviews {
+    padding: 80px 0;
+    background-color: #f7f6f8;
+}
+
+.reviews__title--inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.reviews__title {
+    color: #101010;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 900;
+}
+.reviews__grade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .grade--item {
+        background-color: #fff;
+    }
+}
+
+.col-lg-6 {
+}
+.reviews__item {
+}
+.reviews__item--msg {
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+.reviews__item--text {
+    color: #101010;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.reviews__item--msg--img {
+    position: absolute;
+    width: 30px;
+    bottom: -16%;
+}
+.reviews__item--info {
+    padding-top: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reviews__item--image {
+    width: 50px;
+    height: 50px;
+    border-radius: 3000px;
+    background-color: #e3e3e3;
+}
+.reviews__item--author {
+}
+.reviews__item--name {
+    color: #101010;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.reviews__item--link {
+    color: #101010;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+@media screen and (max-width: 1200px) {
+    .reviews__item--text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .reviews__item--name {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .reviews__item--link {
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .reviews__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .reviews__grade {
+        flex-direction: column;
+    }
+    .reviews__title--inner {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 640px) {
+    .reviews__title--inner {
+        flex-direction: column;
+    }
+    .reviews__grade {
+        flex-direction: row;
+    }
+    .reviews__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .reviews__grade {
+        .grade--item {
+            max-width: 145px;
+            padding: 0 5px;
+            img {
+                width: 72px;
+            }
+            .grade--star--number {
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+    .reviews__item--msg--img {
+        bottom: -13%;
+    }
+    .reviews__item--text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .reviews__item--msg {
+        padding: 20px;
+    }
+    .reviews__item--name {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .reviews__item--link {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .reviews__item--info {
+        padding-top: 30px;
+    }
+}
